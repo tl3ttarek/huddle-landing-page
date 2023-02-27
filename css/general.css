@@ -49,6 +49,7 @@ Accent:
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,20 +83,20 @@ footer *:focus {
 
 .heading-primary {
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   text-align: center;
   margin-bottom: 4.4rem;
 }
 
 .heading-secondary {
   font-weight: 600;
-  font-size: 3.8rem;
+  font-size: 4.4rem;
   margin-bottom: 3.8rem;
 }
 
 .heading-tertiary {
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   margin-bottom: 2.4rem;
 }
 
@@ -109,6 +110,10 @@ footer *:focus {
   width: 100%;
 }
 
+.bg--mobile {
+  display: none;
+}
+
 .grid--4-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -116,16 +121,14 @@ footer *:focus {
 
 .icon {
   display: inline-block;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3rem;
+  height: 3rem;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
 }
 
 .icon-twitter {
-  width: 2.4rem;
-  height: 2.4rem;
   padding: 0.4rem;
   border-radius: 4px;
   fill: #00252e;
